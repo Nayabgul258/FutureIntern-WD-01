@@ -30,28 +30,28 @@ Installation
 To run this portfolio locally, follow these steps:
 
 1 Clone the repository:
-``
+```
 git clone https://github.com/your-username/portfolio.git
 Navigate into the project directory:
-```
+
 ```
 cd portfolio
 Open index.html in your browser:
 ```
-```
 open index.html
 or
 ```
-```
 start index.html
 ```
+
 ```
 Usage
 Simply open the index.html file in any modern browser to view the portfolio.
 
 File Structure
 
-portfolio/
+portfolio/ <br>
+
 ├── index.html          # Main HTML file
 ├── style.css           # CSS for styling the website
 ├── script.js           # JavaScript for interactivity
