@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>PortFolio</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="name"> <span style="color: #ffbd39;;">Nayab</span> Gul </div>
+        <nav>
+            <ul id="sideMenu">
+                <li> <a href="#header">Home </a></li>
+                <li> <a href="#about">About </a></li>
+                <!-- <li> <a href="#skills">Skills </a></li> -->
+                <li> <a href="#project">Project </a></li>
+                <li> <a href="#contact">Contact </a></li> 
+               <li> <a href="#resume">Resume</a></li>
+
+                <i class="fa-regular fa-circle-xmark nav" onclick="closeMenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars nav" onclick="openMenu()"></i>
+        </nav>
+    </div>
+    <section class="home">
+        <div class="home-content">
+            <h3> Hello!</h3>
+            <h1>I'm <span style="color:#ffbd39;"> Nayab Gul</span></h1>
+            <span id="typing-animation"></span>
+            <h2>Software Developer</h2>
+            <button><a href="https://github.com/Nayabgul258?tab=repositories"> My work</a></button>
+        </div>
+        <div class="home-sci">
+            <img src="/image/animated.jpeg">
+        </div>
+    </section>
+
+
+
+
+    <!--------------------------About Secetion----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/photo.png.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me!</h1>
+                    <p id="intro">
+                        I am dedicated MERN Stack Developer With a passion for creating dynamic, and user-friendly web application.
+									Proficient in MongoDB, Express.js, React, and Node.js,
+									 I specialize in building both the front-end and back-end components of web
+									applications.
+									With expertise in Nodejs, I design and implement interactive user interfaces,
+									manage state effectively,building scalable, high-performance applications from front-end interfaces to back-end server architectures,includes design RESTful APIs. I am committed to continuous learning and staying updated with the latest industry trends and technologies to deliver innovative and efficient solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="openTab('Education')">Education</p>
+                        <p class="tab-links" onclick="openTab('Skills')" id="skills">Skills</p>
+                        <p class="tab-links" onclick="openTab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contain active-tab" id="Education">
+                        <ul>
+                            <li><span>BSEB PATNA </span><br> Marks : 64.4%</li>
+                            <li><span>Node Js </span><br> Build the Backend </li>
+                            <li><span>Express </span><br> Connecting with server to easy way </li>
+                            <li><span>Mongo Db </span><br>For Data Store </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contain" id="Skills">
+                        <ul>
+                            <span>Nodejs</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+                            <li><span>JavaScript </span><br> logic of web page</li>
+                            <li><span>Node Js </span><br> Build the Backend </li>
+                            <li><span>Express </span><br> Connecting with server to easy way </li>
+                            <li><span>Mongo Db </span><br>For Data Store </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contain" id="Experience">
+                        <ul>
+                            <li><span>Netflix clone</span><br> logic of web page</li>
+                            <li><span>Node Js </span><br> Build the Backend </li>
+                            <li><span>Express </span><br> Connecting with server to easy way </li>
+                            <li><span>Mongo Db </span><br>For Data Store </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------Project ------------------- -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/animated.jpeg">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos incidunt necessitatibus
+                            provident reprehenderit, facere eligendi, </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/clone.png">
+                    <div class="layer">
+                        <h3>Airbnb </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos incidunt necessitatibus
+                            provident reprehenderit, facere eligendi, </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/clone.png">
+                    <div class="layer">
+                        <h3>calculator</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos incidunt necessitatibus
+                            provident reprehenderit, facere eligendi, </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/Nayabgul258" class="btn"> See More </a>
+
+        </div>
+    </div>
+
+
+    <!-- -------------------------Contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nayabgul258@gamil.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6200607435</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/Nayabgul258"><i class="fa-brands fa-github"></i> </a>
+                        <a href="https://www.linkedin.com/in/nayab-gul786/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.hackerearth.com/@nayabgul258/"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://x.com/nayabgul258"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="/image/NayabResume.pdf" download class=" btn btn2" id="resume">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name " placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message "></textarea>
+                        <button type="submit" class="btn"> Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Made with <i class="fa-solid fa-heart"></i> <span style="color: #ffbd39;">Nayab</span>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+   
+</body>
+
+</html>
